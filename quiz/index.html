@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width initial-scale=1">
+		<meta name="description" content="Il s'agit d'un quiz conçu pour tester les bases de HTML, CSS et JavaScript.">
+		<title>Quiz - Fondamentaux du Front-End</title>
+		<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<section class="title">
+				<h1>Quiz<span class="sub-title">Fondamentaux du Front-End</span></h1>
+			</section>
+			<button type="button" class="hide hint-btn">Indice</button>
+		</header>
+
+		<main>
+			<article class="begin question-answer-wrapper">
+				<section class="hide results-wrapper">
+					<p class="quiz-end-score"></p>
+					<div class="quiz-end-feedback">
+						<p class="quiz-end-feedback-p"></p>
+						<div class="quiz-end-categories"></div>
+					</div>
+					<button type="button" class="retry-btn pass">Réessayer</button>
+				</section>
+				<section class="question-wrapper">
+					<p class="question">Souhaitez-vous commencer un test des fondamentaux du web front-end ?</p>
+					<p class="hide code"></code>
+					<button type="button" class="hide submit-btn submit-btn-landscape" disabled>Soumettre</button>
+				</section>
+				<form class="begin answer-wrapper">
+					<button type="button" class="start-quiz">Commencer le quiz</button>
+					<button type="button" class="quit-quiz">Quitter</button>
+					<input type="submit" class="hide submit-btn submit-btn-portrait" value="Soumettre" disabled>
+				</form>
+			</article>
+		</main>
+
+		<footer>
+			<section class="hide progress-bar">
+				
+			</section>
+			<section class="hide progress">
+				<p class="progress-fill">
+					Progression : <span class="progress-count">1 / 10</span><span class="progress-perc"></span>
+				</p>
+			</section>
+		</footer>
+		<div id="output">
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>

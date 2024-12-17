@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio SOUROUR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/style.css">
+		
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"><img src="./images/logo_size-fotor-bg-remover-20241209221849.png" alt="Logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#accueil" id="accueil-link">Accueil</a></li> 
+        <li><a href="#about-me" id="profile-link">Profil</a></li>
+        <li><a href="#competence" id="competence-link">Compétences</a></li>
+        <li><a href="#contact" id="contact-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>  
+  <div class="container" id="accueil">
+    <h1 class="text">
+      <span class="fixed">Hello</span>
+      <span id="changing-word"></span>
+    </h1>
+    <h2 id="name"></h2>
+    <h3 id="job-title"></h3>
+    <button id="more-info-btn" style="display: none;">Plus d'info</button>
+  </div>
+  <div id="about-me" style="display: none;">
+    <h1>À propos de moi ...</h1>
+    <img id="about-me-image" src="./images/1720184832495.jpg" alt="Image à propos de moi" />
+    <p>Je m'appelle <span class="highlight">Sourour Cheikhrouhou</span>, étudiante en cycle d'ingénieur en 
+      <span class="highlight">génie informatique</span>. En parallèle de mes études, je travaille à distance pour 
+      <span class="highlight">Rise</span>, une entreprise basée en France. Passionnée par le développement et les 
+      nouvelles technologies, je m'intéresse particulièrement à tout ce qui touche à 
+      <span class="highlight">l'innovation et aux solutions numériques</span>. Mon objectif est d'allier mon parcours 
+      académique et professionnel pour contribuer à des projets qui ont un impact positif et tangible.
+      Pour pour plus de détails sur mon parcours académique  <a href="" id="show-parcours" class="highlight">Cliquez ici </a>.
+    </p>    
+</div>
+<section id="parcours-section" style="display: none; opacity: 0;">
+  <h2>Parcours</h2>
+  <table id="parcours-table">
+    <thead>
+      <tr>
+        <tr>
+          <th>Année</th>
+          <th>Formation / Expérience</th>
+          <th>Description</th>
+        </tr>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2021</td>
+        <td>Baccalaureat  </td>
+        <td>Obtention de moon baccalaureat en science </td>
+      </tr>
+      <tr>
+        <td>2024</td>
+        <td>Licence en Technologie de l'information</td>
+        <td>Obtention de ma licence en développement des systemes d information.</td>
+      </tr>
+      <tr>
+        <td>2024</td>
+        <td>Développeur Fullstack</td>
+        <td>Poste en tant que développeur Fullstack.</td>
+      </tr>
+      <tr>
+        <td>2024</td>
+        <td>Etudiant en genie informatique </td>
+        <td>Premiere annee en cycle d ingenieur chez IIT <a href="javascript:void(0);" id="show-temoignages" class="highlight">Voir témoignages IIT</a></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<div id="competence" style="display: none;">
+  <h2>Compétences</h2>
+
+  <table class="competence-table">
+    <thead>
+      <tr>
+        <th>Backend</th>
+        <th>Frontend</th>
+        <th>Design</th>
+        <th>SGBD</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="skill">
+            <p>Spring Boot</p>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          </div>
+          <div class="skill">
+            <p>Node.js</p>
+            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+          </div>
+          <div class="skill">
+            <p>Laravel</p>
+            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+          </div>
+          <div class="skill">
+            <p>Django</p>
+            <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+          </div>
+          <div class="skill">
+            <p>.NET (C#)</p>
+            <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+          </div>
+
+        </td>
+        <td>
+          <div class="skill">
+            <p>React.js</p>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+          </div>
+          <div class="skill">
+            <p>HTML/CSS</p>
+            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+          </div>
+          <div class="skill">
+            <p>NextJs</p>
+            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+          </div>
+          <div class="skill">
+            <p>Angular</p>
+            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+          </div>
+          <div class="skill">
+            <p>Bootstrap</p>
+            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+          </div>
+        </td>
+        <td>
+          <div class="skill">
+            <p>Adobe XD</p>
+            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+          </div>
+          <div class="skill">
+            <p>Adobe Photoshop</p>
+            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+          </div>
+        </td>
+        <td>
+          <div class="skill">
+            <p>MongoDB</p>
+            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+          </div>
+          <div class="skill">
+            <p>MySQL</p>
+            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+          </div>
+          <div class="skill">
+            <p>PostgreSQL </p>
+            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <section id="certifications">
+    <a href="#certifications-section">
+      <button class="certif-btn">Voir mes Certifications</button>
+    </a>
+  </section>
+  <section id="experience-pro">
+    <a href="#experience-section">
+      <button class="exp-btn" id="experience-btn">Expérience Pro</button>
+    </a>
+  </section>
+  
+  <section id="quiz">
+   <a href="./quiz/index.html"><button>Quizz</button></a> 
+  </section>
+</div>
+<!-- Section Témoignages (masquée par défaut) -->
+<section id="temoignages-section" style="display: none; opacity: 0;">
+  <h2>Témoignages IIT</h2>
+  <p id="p">Je m'appelle Sourour, étudiante en Genie Informatique, et je souhaite partager mon expérience à l'Institut International
+     de Technologie de Sfax.
+
+    Depuis mon arrivée à l'IIT Sfax, j'ai eu l'opportunité de travailler sur des projets passionnants qui m'ont permis
+     de développer des compétences techniques solides. Le programme académique m'a offert une base théorique solide,
+      tout en me permettant de me familiariser avec des technologies de pointe. Ce qui m'a particulièrement marqué, 
+      c'est la diversité des projets et des matières proposées, qui m'ont aidé à affiner mes intérêts professionnels.
+    
+    Un des moments les plus marquants de mon parcours a été parfait. Ce projet m'a permis de travailler en équipe,
+     de résoudre des problèmes complexes et d'appliquer des concepts théoriques dans un cadre réel. L'accompagnement
+      de mes professeurs et le soutien de mes camarades ont été essentiels pour mener à bien ce projet.
+    
+    Cependant, mon parcours n'a pas été sans défis. Comme tout étudiant, j'ai dû faire face à des moments de stress,
+     surtout lors des périodes d'examen ou lorsque des projets exigeaient une grande quantité de travail. Mais ces expériences
+      m'ont appris à mieux gérer mon temps, à chercher des solutions de manière autonome et à ne jamais baisser les bras face
+       aux difficultés.
+    
+    Aujourd'hui, grâce à l'IIT Sfax, je suis plus confiante dans mes capacités à poursuivre une carrière dans le domaine de developpement. 
+    Mes projets à l'école m'ont ouvert de nombreuses portes, et je suis excitée par les possibilités qui m'attendent 
+    après l'obtention de mon diplôme.
+    
+    Je conseille vivement aux futurs étudiants de tirer parti des nombreuses ressources offertes par l'IIT Sfax : 
+    que ce soit les laboratoires, les conférences, ou les opportunités de mobilité internationale. La clé du succès est 
+    la persévérance, la collaboration et l'engagement.
+    
+    Je suis convaincue que mon parcours à l'IIT Sfax m'a préparée à relever les défis professionnels de demain, 
+    et je suis impatiente de voir où cette formation me mènera.</p>
+  
+</section>
+<section id="contact" class="section">
+  <div class="wrapper">
+    <div class="inner">
+      <form action="">
+        <h3>Contacter Nous</h3>
+        <label class="form-group">
+          <span>Nom:</span>
+          <br>
+          <input type="text" class="form-control"  required>
+       
+          <span class="border"></span>
+        </label>
+        <br>
+        <label class="form-group">
+
+          <span for="">Mail:</span>
+          <br>
+          <input type="text" class="form-control"  required>
+          
+          <span class="border"></span>
+        </label>
+        <br>
+        <label class="form-group" >
+          <br>
+          <span for="">Message:</span>
+          <br>
+
+          <textarea name="" id="" class="form-control" required></textarea>
+          <span class="border"></span>
+        </label>
+        <br>
+        <button>Submit 
+          <i class="zmdi zmdi-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+      
+</section>
+
+<section id="certifications-section" style="display: none; opacity: 0;">
+  <h2>Mes Certifications</h2>
+  <div class="certif-gallery">
+    <div class="certif-container">
+      <img src="./images/3c7e576e-df2b-4a6d-840b-6a62a8615292.jpg" alt="Certificat 1">
+      <img src="./images/4f0470c9-4da8-43f2-bd04-3cf61b40bf32.jpg" alt="Certificat 2">
+      <img src="./images/672cd29c-fbde-4cdd-86be-0ee023ae89c2.jpg" alt="Certificat 3">
+      <img src="./images/0919f42c-c0d4-49bb-a4b4-03ba2a730d05.jpg" alt="Certificat 4">
+      <img src="./images/e671b112-a0d3-4ca5-8987-c7c24db544c1.jpg" alt="Certificat 5">
+      <img src="./images/f1015e83-c046-42c1-bdec-72df419474a6.jpg" alt="Certificat 6">
+    </div>
+  </div>
+</section>
+
+<!-- Section cachée pour l'expérience -->
+<div id="experience-section" style="display: none;">
+  <h3>Mon expérience professionnelle</h3>
+  
+  <div class="experience-item">
+    <h4>2022 - Stage Initiation</h4>
+    <p><strong>Durée</strong>: 1 mois (Télétravail) avec Rise</p>
+    <p><strong>Projet</strong>: Création d'un site web utilisant HTML, CSS et JavaScript.</p>
+  </div>
+  
+  <div class="experience-item">
+    <h4>2023 - Stage Perfectionnement</h4>
+    <p><strong>Durée</strong>: 1 mois avec Rise</p>
+    <p><strong>Projet</strong>: Création d'un site dynamique avec Angular et Laravel. Il s'agit d'un magasin de vente en ligne avec plusieurs boutiques, chaque boutique ayant ses propres produits.</p>
+  </div>
+  
+  <div class="experience-item">
+    <h4>2024 - Stage PFE</h4>
+    <p><strong>Durée</strong>: 6 mois avec Treetronix</p>
+    <p><strong>Projet</strong>: Création d'une solution web pour un parking intelligent en utilisant Kafka, Node.js et Angular.</p>
+  </div>
+</div>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2024 SOUROUR. Tous droits réservés.</p>
+      <ul class="social-links">
+        <li><a href="https://www.facebook.com/sourour.chiekhrouhou.14"><img src="./images/communication.png" alt="Facebook"></a></li>
+        <li><a href="https://x.com/souchiekh78"><img src="./images/twitter.png" alt="Twitter"></a></li>
+        <li><a href="https://www.linkedin.com/in/sourour-cheikhrouhou-b3a72b256/"><img src="./images/linkedin.png" alt="LinkedIn"></a></li>
+        <li><a href="https://github.com/sourourcheikh11"><img src="./images/github.png" alt="GitHub"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

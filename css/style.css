@@ -1,0 +1,104 @@
+body {
+  font-family: "Montserrat-Regular";
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+  background-color: #2a3b8f;
+  padding-top: 70px; /* Ajoute un espace au-dessus du corps pour la navigation */
+}
+
+input, textarea, select, button {
+  font-family: "Montserrat-Regular";
+  color: #fff;
+  font-size: 12px;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: "Montserrat-Bold";
+  color: #00ade6;
+  text-align: center;
+}
+
+p {
+  font-size: 11px;
+  padding: 0 5px;
+  color: #d9d9d9;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  height: 30px;
+  font-size: 12px;
+  border: 1px solid #00ade6;
+  background-color: transparent;
+  color: #fff;
+  padding: 8px;
+}
+
+.form-control:focus, .form-control:valid {
+  border-color: #fff;
+  background-color: transparent;
+}
+
+button {
+  width: 130px;
+  height: 40px;
+  font-size: 12px;
+  margin-top: 25px;
+  cursor: pointer;
+  background-color: #00ade6;
+  border: 2px solid #00ade6;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat-SemiBold";
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2098d1;
+  border-color: #2098d1;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  z-index: 1; /* Assurez-vous que le formulaire se place sous la barre de navigation */
+}
+
+.inner {
+  max-width: 500px;
+  margin: auto;
+  padding: 15px;
+  border: 2px solid #00ade6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .inner {
+    padding: 15px 10px 20px;
+    border: 2px solid #00ade6;
+  }
+
+  .wrapper {
+    background: none;
+  }
+}
